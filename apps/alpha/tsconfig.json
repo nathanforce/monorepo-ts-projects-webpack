@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "rootDir": "../../",
+    "outDir": "../../lib",
+    "baseUrl": "../../",
+    "downlevelIteration": true,
+    "paths": {
+      "@packages/constants": ["packages/constants/src/index.ts"],
+      "@packages/design-system": ["packages/design-system/src/index.tsx"],
+      "@packages/utils": ["packages/utils/src/index.ts"]
+    },
+    "types": ["webpack-env"]
+  },
+  "include": ["./src/index.tsx"],
+  "references": [
+    {
+      "path": "../../packages/constants/tsconfig.json"
+    },
+    {
+      "path": "../../packages/design-system/tsconfig.json"
+    },
+    {
+      "path": "../../packages/utils/tsconfig.json"
+    }
+  ]
+}

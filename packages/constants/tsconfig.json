@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "strict": true,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "lib": ["esnext"],
+    "outDir": "../../lib/",
+    "rootDir": "../../",
+    "baseUrl": "../../",
+    "types": []
+  },
+  "include": ["./src/**/*"]
+}

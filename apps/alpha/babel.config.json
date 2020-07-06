@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": 3,
+        "modules": false,
+        "exclude": ["transform-typeof-symbol"],
+        "targets": {
+          "browsers": "last 2 versions, > 0.5%, ie >= 11"
+        }
+      }
+    ],
+    "@babel/preset-react",
+    ["@babel/preset-typescript", { "allowNamespaces": true }]
+  ],
+  "plugins": [
+    // Enable loose mode to use assignment instead of defineProperty
+    // See discussion in https://github.com/facebook/create-react-app/issues/4263
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
+  ]
+}

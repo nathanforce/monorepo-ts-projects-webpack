@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "declaration": true,
+    "strict": true,
+    "module": "esnext",
+    "target": "es5",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "outDir": "../../lib/",
+    "rootDir": "../../",
+    "baseUrl": "../../",
+    "paths": {
+      "@packages/constants": ["packages/constants/src/index.ts"],
+      "@packages/constants/*": ["packages/constants/src/*"]
+    },
+    "types": []
+  },
+  "include": ["./src/**/*"],
+  "references": [
+    {
+      "path": "../constants/tsconfig.json"
+    }
+  ]
+}
